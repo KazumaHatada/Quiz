@@ -23,6 +23,8 @@ class ChooseGenreViewController: UIViewController {
             qvc.choosedGenre = "geinou.txt"
         } else if (segue.identifier == "segueSports") {
             qvc.choosedGenre = "sports.txt"
+        } else {
+            qvc.choosedGenre = "zatsugaku.txt"
         }
     }
 }

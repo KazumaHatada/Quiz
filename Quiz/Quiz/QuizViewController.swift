@@ -54,8 +54,19 @@ class QuizViewController: UIViewController {
             if answer != nil {
                 changeResultLabel(answer!)
                 changeButtonColor(answer!)
+                
+                // 1秒待って別の問題を出す
+                //sleep(1)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    do {
+                        try self.drawQuestion(self.qf)
+                    } catch {
+                        print("Error info: \(error)")
+                    }
+                }
             }
         } else {
+            // もはやここには来ないはず
             // 回答後→別の問題を出す
             do {
                 try drawQuestion(qf)
@@ -66,11 +77,15 @@ class QuizViewController: UIViewController {
     }
 
     func changeResultLabel(_ answer:String) {
+        lResult.textColor = UIColor.white
+        
         if rightAns == answer {
             lResult.text = "正解！！"
+            lResult.backgroundColor = UIColor.blue
             ansOK += 1
         } else {
-            lResult.text = "はずれ"
+            lResult.text = "はずれ。。"
+            lResult.backgroundColor = UIColor.red
             ansNG += 1
         }
     }
@@ -109,13 +124,13 @@ class QuizViewController: UIViewController {
             try drawQuestion(qf)
             
             // タップジェスチャーを作成します。
-            let singleTapGesture = UITapGestureRecognizer(target: self, action: #selector(singleTap(_:)))
+            //let singleTapGesture = UITapGestureRecognizer(target: self, action: #selector(singleTap(_:)))
             
             // シングルタップで反応するように設定します。
-            singleTapGesture.numberOfTapsRequired = 1
+            //singleTapGesture.numberOfTapsRequired = 1
             
             // ビューにジェスチャーを設定します。
-            view.addGestureRecognizer(singleTapGesture)
+            //view.addGestureRecognizer(singleTapGesture)
             
         } catch {
             print("Error info: \(error)")
@@ -129,6 +144,7 @@ class QuizViewController: UIViewController {
         
         lQuestion.text = oneQuestion.question
         lResult.text = ""
+        lResult.backgroundColor = UIColor.green
         
         var shownGenre = ""
         switch choosedGenre {

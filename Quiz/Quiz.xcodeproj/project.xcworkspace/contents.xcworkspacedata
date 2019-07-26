@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../geinou.txt">
+      location = "group:/Users/kazumahatada/Desktop/SwiftApp/Quiz/Quiz/zatsugaku.txt">
    </FileRef>
    <FileRef
-      location = "group:">
-   </FileRef>
-   <FileRef
-      location = "self:Quiz.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

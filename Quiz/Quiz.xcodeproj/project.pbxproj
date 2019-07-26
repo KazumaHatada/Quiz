@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A887F3C22E049CC00B3C4AB /* zatsugaku.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7A887F3B22E049CC00B3C4AB /* zatsugaku.txt */; };
 		7A887F3E22E1576F00B3C4AB /* ChooseGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A887F3D22E1576F00B3C4AB /* ChooseGenreViewController.swift */; };
 		7ABB97FD22DEC96D0051A969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB97FC22DEC96D0051A969 /* AppDelegate.swift */; };
 		7ABB97FF22DEC96D0051A969 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB97FE22DEC96D0051A969 /* QuizViewController.swift */; };
@@ -16,12 +15,12 @@
 		7ABB980722DEC96E0051A969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB980522DEC96E0051A969 /* LaunchScreen.storyboard */; };
 		7ABB981322DEEEAD0051A969 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB981222DEEEAD0051A969 /* Common.swift */; };
 		7ABB981522DF351E0051A969 /* geinou.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB981422DF351E0051A969 /* geinou.txt */; };
-		7ABB981722DF35380051A969 /* sports.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7ABB981622DF35380051A969 /* sports.txt */; };
 		7ABB981922E00B780051A969 /* QuizFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABB981822E00B780051A969 /* QuizFile.swift */; };
+		7AEE35C622E9690400C2932F /* sports.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7AEE35C522E9690400C2932F /* sports.txt */; };
+		7AEE35E922EAC12600C2932F /* zatsugaku.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7AEE35E822EAC12600C2932F /* zatsugaku.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7A887F3B22E049CC00B3C4AB /* zatsugaku.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = zatsugaku.txt; path = ../../../zatsugaku.txt; sourceTree = "<group>"; };
 		7A887F3D22E1576F00B3C4AB /* ChooseGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGenreViewController.swift; sourceTree = "<group>"; };
 		7ABB97F922DEC96D0051A969 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABB97FC22DEC96D0051A969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,9 +30,10 @@
 		7ABB980622DEC96E0051A969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ABB980822DEC96E0051A969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ABB981222DEEEAD0051A969 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		7ABB981422DF351E0051A969 /* geinou.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = geinou.txt; path = ../../../geinou.txt; sourceTree = "<group>"; };
-		7ABB981622DF35380051A969 /* sports.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sports.txt; path = ../../../sports.txt; sourceTree = "<group>"; };
+		7ABB981422DF351E0051A969 /* geinou.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = geinou.txt; sourceTree = "<group>"; };
 		7ABB981822E00B780051A969 /* QuizFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizFile.swift; sourceTree = "<group>"; };
+		7AEE35C522E9690400C2932F /* sports.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sports.txt; sourceTree = "<group>"; };
+		7AEE35E822EAC12600C2932F /* zatsugaku.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zatsugaku.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +66,8 @@
 		7ABB97FB22DEC96D0051A969 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				7A887F3B22E049CC00B3C4AB /* zatsugaku.txt */,
-				7ABB981622DF35380051A969 /* sports.txt */,
+				7AEE35E822EAC12600C2932F /* zatsugaku.txt */,
+				7AEE35C522E9690400C2932F /* sports.txt */,
 				7ABB981422DF351E0051A969 /* geinou.txt */,
 				7ABB97FC22DEC96D0051A969 /* AppDelegate.swift */,
 				7ABB97FE22DEC96D0051A969 /* QuizViewController.swift */,
@@ -140,12 +140,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A887F3C22E049CC00B3C4AB /* zatsugaku.txt in Resources */,
+				7AEE35E922EAC12600C2932F /* zatsugaku.txt in Resources */,
 				7ABB980722DEC96E0051A969 /* LaunchScreen.storyboard in Resources */,
 				7ABB980422DEC96E0051A969 /* Assets.xcassets in Resources */,
 				7ABB980222DEC96D0051A969 /* Main.storyboard in Resources */,
 				7ABB981522DF351E0051A969 /* geinou.txt in Resources */,
-				7ABB981722DF35380051A969 /* sports.txt in Resources */,
+				7AEE35C622E9690400C2932F /* sports.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

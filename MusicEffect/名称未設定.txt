@@ -2,6 +2,11 @@ swift stackview サイズ 確保
 https://ja.stackoverflow.com/questions/49671/vertical%E3%81%AAstackview%E3%81%AE%E4%B8%AD%E3%81%AB%E7%BD%AE%E3%81%84%E3%81%9Fview%E3%81%AE%E9%AB%98%E3%81%95%E3%82%92%E5%86%85%E5%81%B4%E3%81%AE%E3%83%9C%E3%82%BF%E3%83%B3%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E6%B1%BA%E5%AE%9A%E3%81%95%E3%81%9B%E3%81%9F%E3%81%84
 オートレイアウトの解説が手厚い
 
+UIImageView の Content Mode について
+https://blog.officekoma.co.jp/2016/10/swiftuiimageviewcontentmode.html
+ScaleAspectFit = *ImageViewのサイズ内で*、画像を元の比率のまま表示する
+                 縦横比を維持したままImageViewに収まるように縮小する設定
+
 The stackviews distribution should be set to fillProportionally so every arranged subview keeps its proportions.
 
 However, the remaining space is filled by the stackview automatically. To suppress this, you need to add an empty view at the end. This empty view needs a low content hugging priority so it can grow to fill up the space where the other views remain by their proportions.
